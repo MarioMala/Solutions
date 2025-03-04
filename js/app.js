@@ -4,6 +4,7 @@ import { openModal, choiceModule, sendNewSolution } from './helpers.js';
 import { URL } from '../data/api.js';
 
 const modalSolution = document.querySelector('.modal__add');
+const searchSolution = document.querySelector('#select__search');
 const btnAddSolution = document.querySelector('.btn__add');
 const imgAddSolution = document.getElementById('img__add--solution');
 const selectModule = document.querySelector('.select__module');
