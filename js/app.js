@@ -1,6 +1,6 @@
 /** @format */
 
-import { openModal, choiceModule } from './helpers.js';
+import { openModal, choiceModule, sendNewSolution } from './helpers.js';
 import { URL } from '../data/api.js';
 
 const modalSolution = document.querySelector('.modal__add');
@@ -11,8 +11,8 @@ const inputTitle = document.querySelector('.input__title');
 const inputContent = document.querySelector('.input__content');
 const btnSend = document.querySelector('.btn__send');
 
-console.log(URL);
-
 btnAddSolution.addEventListener('click', () => openModal(modalSolution, imgAddSolution));
 
 selectModule.addEventListener('change', e => choiceModule(e));
+
+btnSend.addEventListener('click', () => sendNewSolution(URL, selectModule, inputTitle, inputContent));

@@ -1,27 +1,21 @@
 /** @format */
-export function sendSolution (title, content, URL, module) {
-	console.log(URL + module);
-	fetch(URL + module, {
+export function sendNewSolution(URL, inputModule, inputTitle, inputContent) {
+	let module = inputModule.value;
+	let title = inputTitle.value;
+	let content = inputContent.value;
+
+	const newSolution = {
+		title: title,
+		content: content,
+		create_at: new Date().toLocaleDateString(),
+	};
+
+	fetch(`${URL}${module}`, {
 		method: 'POST',
 		headers: {
 			'Content-type': 'application/json',
 		},
-		body: JSON.stringify({
-			title: title,
-			content: content,
-			create_at: new Date().toLocaleDateString(),
-		}),
-	});
-	fetch('http://localhost:3000/srs', {
-		method: 'POST',
-		headers: {
-			'Content-type': 'application/json',
-		},
-		body: JSON.stringify({
-			title: 'Testowy tytul',
-			content: 'testowy content',
-			create_at: new Date().toLocaleDateString(),
-		}),
+		body: JSON.stringify(newSolution),
 	});
 }
 
@@ -36,30 +30,10 @@ export function openModal(element, img) {
 export function choiceModule(e) {
 	switch (e.target.value) {
 		case 'SRS':
-			fetch('http://localhost:3000/srs', {
-				method: 'POST',
-				headers: {
-					'Content-type': 'application/json',
-				},
-				body: JSON.stringify({
-					title: 'Testowy tytul',
-					content: 'testowy content',
-					create_at: new Date().toLocaleDateString(),
-				}),
-			});
+			console.log('Wybrano modul SRS');
 			break;
 		case 'SCM':
-			fetch('http://localhost:3000/scm', {
-				method: 'POST',
-				headers: {
-					'Content-type': 'application/json',
-				},
-				body: JSON.stringify({
-					title: 'Testowy tytul',
-					content: 'testowy content',
-					create_at: new Date().toLocaleDateString(),
-				}),
-			});
+			console.log('Wybrano modul SCM');
 			break;
 		case 'SOK':
 			console.log('Wybrano modul SOK');
@@ -100,4 +74,3 @@ export function choiceModule(e) {
 			break;
 	}
 }
-

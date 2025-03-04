@@ -1,70 +1,130 @@
 {
-  "srs": [
-    {
-      "id": 1,
-      "title": "godzina zamknięcia doby",
-      "content": "Sprawdzamy w tabeli SRS_RDJ_NAGLOWEK"
-    },
-    {
-      "id": 2,
-      "title": " usuwanie korekt",
-      "content": "Usunąć korektę można tylko wtedy gdy została wysłana do FOZS - PRZEKAZANE DO FOZS (O*) ZAFAKTUROWANE korekty można usuwać tylko od ostatniego numeru w ramach wystawcy z poziomu programu NIE MOŻE BYĆ DZIUR W NUMERACJI. (ZMIANA STATUSU W TABELI SEK_KORFK z 2 na 1). OBCNIE NIE USUWAMY KOREKT Z UWAGI NA PDF WYSYŁANE DO SYSTEMU"
-    },
-    {
-      "title": "Testowy tytul",
-      "content": "testowy content",
-      "create_at": "3.03.2025",
-      "id": 3
-    }
-  ],
-  "scm": [
-    {
-      "id": 1,
-      "title": "Testowy tytul",
-      "content": "testowy content",
-      "create_at": "3.03.2025"
-    },
-    {
-      "title": "Testowy tytul",
-      "content": "testowy content",
-      "create_at": "3.03.2025",
-      "id": 2
-    }
-  ],
-  "kdw": [
-    {}
-  ],
-  "sql": [
-    {}
-  ],
-  "eru": [
-    {}
-  ],
-  "scd": [
-    {}
-  ],
-  "sok": [
-    {}
-  ],
-  "sek": [
-    {}
-  ],
-  "sdr": [
-    {}
-  ],
-  "skj": [
-    {}
-  ],
-  "slab": [
-    {}
-  ],
-  "sop": [
-    {}
-  ],
-  "szyk3": [
-    {}
-  ],
-  "wadm": [
-    {}
-  ]
+	"srs": [
+		{
+			"id": 1,
+			"title": "godzina zamknięcia doby",
+			"content": "Sprawdzamy w tabeli SRS_RDJ_NAGLOWEK"
+		},
+		{
+			"id": 2,
+			"title": " usuwanie korekt",
+			"content": "Usunąć korektę można tylko wtedy gdy została wysłana do FOZS - PRZEKAZANE DO FOZS (O*) ZAFAKTUROWANE korekty można usuwać tylko od ostatniego numeru w ramach wystawcy z poziomu programu NIE MOŻE BYĆ DZIUR W NUMERACJI. (ZMIANA STATUSU W TABELI SEK_KORFK z 2 na 1). OBCNIE NIE USUWAMY KOREKT Z UWAGI NA PDF WYSYŁANE DO SYSTEMU"
+		}
+	],
+	"scm": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		},
+		{
+			"title": "Pierwszy test",
+			"content": "Treść pierwszego testu",
+			"create_at": "4.03.2025",
+			"id": 2
+		}
+	],
+	"kdw": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"sql": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"eru": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"scd": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"sok": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"sek": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		},
+		{
+			"title": "Test tytułu dla SEK",
+			"content": "Test treści dla SEK",
+			"create_at": "4.03.2025",
+			"id": 2
+		}
+	],
+	"sdr": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"skj": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"slab": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"sop": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"szyk3": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	],
+	"wadm": [
+		{
+			"id": 1,
+			"title": "Testowy tytul",
+			"content": "testowy content",
+			"create_at": "3.03.2025"
+		}
+	]
 }
