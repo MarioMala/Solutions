@@ -1,0 +1,181 @@
+/** @format */
+
+@font-face {
+	font-family: 'IBM Plex Bold';
+	src: url('../assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-BoldItalic.ttf');
+	font-family: 'IBM Plex Thin';
+	src: url('../assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Thin.ttf');
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('../assets/fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../assets/fonts/Roboto/Roboto-Black.ttf');
+}
+
+@font-face {
+	font-family: 'Teko';
+	src: url('../assets/fonts/Teko/Teko-VariableFont_wght.ttf');
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../assets/fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--fontIBM: 'IBM Plex Bold', monospace;
+	--fontOswald: 'Oswald', sans-serif;
+	--fontRoboto: 'Roboto', sans-serif;
+	--fontTeko: 'Teko', sans-serif;
+	--fontUbuntu: 'Ubuntu', sans-serif;
+	--green-color: #54bc54;
+	--gold-color: rgb(240, 209, 31);
+	--orange-color: #ee9910;
+	--blue-color: #081a83;
+	--red-color: #ca1c0f;
+	--white-color: #fff;
+	--black-color: #000;
+	--grey-color: #e4e0e0;
+	--btn-color: #5e9bf7;
+	font-size: 62.5%;
+}
+
+body {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--grey-color);
+	color: var(--white-color);
+	font-family: var(--fontIBM);
+}
+
+.root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 1680px;
+	min-height: 100vh;
+	padding: 1rem 2rem;
+	color: var(--summer-color);
+}
+
+.header {
+	align-items: center;
+	border-bottom: 2px solid var(--blue-color);
+	color: var(--blue-color);
+	display: flex;
+	justify-content: space-between;
+	font-size: 2rem;
+	padding: 1rem;
+	width: 100%;
+}
+
+.header h1 {
+	font-family: var(--fontIBM);
+	font-size: 3.5rem;
+	padding-left: 10rem;
+}
+
+.header .btn__add {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+}
+
+.header .btn__add:hover {
+	transform: scale(1.1);
+}
+
+.header .btn__add img {
+	max-width: 5rem;
+}
+
+.root .modal__add {
+	display: none;
+	flex-direction: column;
+	width: 70%;
+	-webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	border-radius: 0.5rem;
+	font-family: var(--fontIBM);
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+
+.root .modal__add .select__module {
+	border: 2px solid var(--blue-color);
+	border-radius: 0.5rem;
+	color: var(--blue-color);
+	font-size: 2rem;
+	font-weight: bold;
+	max-width: 20%;
+	outline: none;
+	padding: 1rem;
+	font-family: var(--fontIBM);
+}
+
+.root .modal__add input {
+	border: 2px solid var(--blue-color);
+	border-radius: 0.5rem;
+	background-color: var(--white-color);
+	color: var(--blue-color);
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 1rem 0;
+	outline: none;
+	padding: 1rem;
+}
+
+.root .modal__add input::placeholder {
+	color: var(--blue-color);
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.root .modal__add input:focus {
+	border: 2px solid var(--blue-color);
+}
+
+.root .modal__add input:focus::placeholder {
+	color: #fff;
+}
+
+.root .modal__add .btn__send {
+	background-color: var(--btn-color);
+	border: none;
+	border-radius: 0.5rem;
+	color: var(--white-color);
+	cursor: pointer;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: var(--fontIBM);
+	margin-top: 1rem;
+	padding: 1rem;
+	transition: transform 0.3s ease-in-out;
+}
+
+.root .modal__add .btn__send:hover {
+	transform: scaleX(0.9);
+}
+
+.modal__add.active {
+	display: flex;
+}
