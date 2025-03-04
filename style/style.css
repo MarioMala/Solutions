@@ -218,9 +218,11 @@ body {
 }
 
 .root .main .search-box {
+	justify-content: start;
 	align-content: center;
 	display: flex;
 	width: 70%;
+	margin-top: 0.5rem;
 }
 
 .root .main .search-box label {
@@ -236,4 +238,16 @@ body {
 .root .main .search-box .select__search:focus {
 	border: 2px solid var(--blue-color);
 	border-radius: 0.5rem;
+}
+
+.root .main .search-box .input__search {
+	
+	border-radius: 0.5rem;
+	color: var(--blue-color);
+	font-size: 1rem;
+	font-weight: bold;
+	min-height: 1rem;
+	outline: none;
+	padding: 1rem;
+	width: 70%;
 }

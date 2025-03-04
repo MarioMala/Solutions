@@ -10,7 +10,10 @@ const imgAddSolution = document.getElementById('img__add--solution');
 const selectModule = document.querySelector('.select__module');
 const inputTitle = document.querySelector('.input__title');
 const inputContent = document.querySelector('.input__content');
+const inputSearch = document.querySelector('.input__search');
 const btnSend = document.querySelector('.btn__send');
+
+console.log(inputSearch)
 
 btnAddSolution.addEventListener('click', () => openModal(modalSolution, imgAddSolution));
 
