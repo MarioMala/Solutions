@@ -1,4 +1,5 @@
 /** @format */
+
 export function sendNewSolution(URL, inputModule, inputTitle, inputContent) {
 	let module = inputModule.value;
 	let title = inputTitle.value;
@@ -19,6 +20,12 @@ export function sendNewSolution(URL, inputModule, inputTitle, inputContent) {
 	});
 }
 
+export function getSolutions(URL, module) {
+	fetch(URL + module.value)
+		.then(response => response.json())
+		.then(data => console.log(data[1].content));
+}
+
 export function openModal(element, img) {
 	element.classList.toggle('active');
 
@@ -30,7 +37,8 @@ export function openModal(element, img) {
 export function choiceModule(e) {
 	switch (e.target.value) {
 		case 'SRS':
-			console.log('Wybrano modul SRS');
+			console.log(URL + e.target.value);
+
 			break;
 		case 'SCM':
 			console.log('Wybrano modul SCM');

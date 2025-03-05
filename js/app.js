@@ -1,6 +1,6 @@
 /** @format */
 
-import { openModal, choiceModule, sendNewSolution } from './helpers.js';
+import { openModal, choiceModule, sendNewSolution, getSolutions } from './helpers.js';
 import { URL } from '../data/api.js';
 
 const modalSolution = document.querySelector('.modal__add');
@@ -13,10 +13,10 @@ const inputContent = document.querySelector('.input__content');
 const inputSearch = document.querySelector('.input__search');
 const btnSend = document.querySelector('.btn__send');
 
-console.log(inputSearch)
-
 btnAddSolution.addEventListener('click', () => openModal(modalSolution, imgAddSolution));
 
 selectModule.addEventListener('change', e => choiceModule(e));
+
+searchSolution.addEventListener('change', () => getSolutions(URL, searchSolution));
 
 btnSend.addEventListener('click', () => sendNewSolution(URL, selectModule, inputTitle, inputContent));
