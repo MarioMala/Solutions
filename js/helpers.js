@@ -20,10 +20,10 @@ export function sendNewSolution(URL, inputModule, inputTitle, inputContent) {
 	});
 }
 
-export function getSolutions(URL, module) {
-	fetch(URL + module.value)
+export async function getSolutions(URL, module) {
+	return fetch(URL + module.value)
 		.then(response => response.json())
-		.then(data => console.log(data[1].content));
+		.then(data => console.log(data));
 }
 
 export function openModal(element, img) {
